@@ -1,68 +1,111 @@
 @keyframes moveInLeft {
-    0% {
-      opacity: 0;
-      transform: translateX(-20rem);
-    }
-  
-    80% {
-      transform: translateX(1rem);
-    }
-  
-    100% {
-      opacity: 1;
-      transform: translate(0);
-    }
+  0% {
+    opacity: 0;
+    transform: translateX(-20rem);
   }
-  
-  @keyframes moveInRight {
-    0% {
-      opacity: 0;
-      transform: translateX(20px);
-    }
-  
-    80% {
-      transform: translateX(-1rem);
-    }
-  
-    100% {
-      opacity: 1;
-      transform: translate(0);
-    }
+
+  80% {
+    transform: translateX(1rem);
   }
-  
-  @keyframes logoRotate {
-    0% {
-      transform: rotate(0deg) scale(0);
-    }
-  
-    100% {
-      transform: rotate(360deg) scale(1);
-    }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
   }
-  
-  @keyframes moveInBottom {
-    0% {
-      opacity: 0;
-      transform: translateY(3rem);
-    }
-  
-    80% {
-      opacity: 1;
-      transform: translateY(-1rem);
-    }
-  
-    100% {
-      opacity: 1;
-      transform: translate(0);
-    }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
   }
-  
-  @keyframes opacityMain {
-    0% {
-      opacity: 0;
-    }
-  
-    100% {
-      opacity: 1;
-    }
+
+  80% {
+    transform: translateX(-1rem);
   }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes logoRotate {
+  0% {
+    transform: rotate(0deg) scale(0);
+  }
+
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  80% {
+    opacity: 1;
+    transform: translateY(-1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes opacityMain {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes iconRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  33% {
+    transform: rotate(20deg);
+  }
+  66% {
+    transform: rotate(-20deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+
+}
+
+@keyframes iconRotateReset {
+  0% {
+    transform: rotate(0deg);
+  }
+  33% {
+    transform: rotate(20deg);
+  }
+  66% {
+    transform: rotate(-20deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+
+}
+
+
+@keyframes in {
+  from   { -webkit-transform: rotate(0deg); }
+  to { -webkit-transform: rotate(360deg);}
+}
+
+@keyframes out {
+  0%   { -webkit-transform: rotate(360deg); }
+  100% { -webkit-transform: rotate(0deg); }
+}

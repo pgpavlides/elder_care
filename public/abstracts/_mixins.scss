@@ -1,7 +1,23 @@
 @mixin clearfix {
-    &::after {
-        content: "";
-        display: table;
-        clear: both;
-    }
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin rotateanimate {
+  animation: iconRotate 1.5s ease-in-out infinite;
+}
+
+@mixin rotateanimatereset {
+  animation: iconRotateReset 1.5s ease-in-out;
+}
+
+@mixin in {
+  animation: in .5s ease-in-out;
+}
+
+@mixin out {
+  animation: out .5s ease-in-out;
 }
